@@ -86,14 +86,21 @@ WSGI_APPLICATION = 'inventory.wsgi.application'
 #     }
 # }
 DATABASES = {
+#   'default': {
+#        'ENGINE': 'django.db.backends.mysql',
+#        'NAME': 'heroku_963145ced2e35e2',
+#        'USER': 'b86c25fe305fa3',
+#       'PASSWORD': '78f2157f4101482',
+#        'HOST': 'us-cdbr-east-02.cleardb.com',
+#        'PORT': '3306',
+#    }
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'heroku_963145ced2e35e2',
-        'USER': 'b86c25fe305fa3',
-        'PASSWORD': '78f2157f4101482',
-        'HOST': 'us-cdbr-east-02.cleardb.com',
+        'NAME': 'stockdb',
+        'USER': 'root',
+        'PASSWORD': '',
+        'HOST': 'localhost',
         'PORT': '3306',
-
     }
 }
 
